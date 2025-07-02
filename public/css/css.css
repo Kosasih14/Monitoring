@@ -1,0 +1,77 @@
+.content {
+    padding: 20px;
+    background-color: white;
+}
+
+.title {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.btn-add {
+    background-color: #7CFC00;
+    color: black;
+    padding: 8px 14px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.student-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #f8e8c0;
+}
+
+.student-table th,
+.student-table td {
+    padding: 12px;
+    border: 1px solid #d6a85f;
+    text-align: left;
+}
+
+.student-table thead {
+    background-color: #fffab5;
+}
+
+.btn-edit {
+    background-color: #b2f7b5;
+    border: none;
+    padding: 5px 10px;
+    margin-right: 5px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.btn-delete {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+@media (min-width: 769px) {
+    .content {
+        margin-left: 260px; /* Lebar sidebar desktop */
+    }
+}
+
+@media (max-width: 768px) {
+    body.sidebar-open .content {
+        margin-left: 70vw !important; /* Lebar sidebar responsive */
+    }
+}
+
+@media (max-width: 425px) {
+    body.sidebar-open .content {
+        margin-left: 75vw !important;
+    }
+}

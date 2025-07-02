@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+
+.logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; /* Membuat gambar bulat */
+    object-fit: cover;
+    border: 2px solid #4CAF50;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08)
+}
+
+
+/* Header styles */
+.header {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding: 16px 24px;
+    background-color: transparent;
+    border-bottom: 1px solid #ddd;
+}
+
+
+/* User Profile (acts as logout button/link) */
+.user-profile {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.user-profile:hover {
+    background-color: #e0e0e0;
+}
+
+/* Profile Icon and Avatar */
+.profile-icon {
+    width: 36px;
+    height: 36px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.profile-icon .avatar {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* User Info Text */
+.user-info {
+    font-size: 16px;
+    color: #333;
+    font-weight: 500;
+}
+
+
+/* Footer styles */
+.footer {
+    padding: 15px;
+    background-color: transparent;
+    text-align: center;
+    border-top: 1px solid #eee;
+    font-size: 14px;
+    color: #666;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .card {
+        width: 100%;
+    }
+}
+

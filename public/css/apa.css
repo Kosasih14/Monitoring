@@ -1,0 +1,92 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f6fa;
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #2f3640;
+}
+
+.btn-add,
+.btn-edit,
+.btn-delete,
+.btn-cancel {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 4px 4px 4px 0;
+    display: inline-block;
+}
+
+.btn-add {
+    background-color: #27ae60;
+    color: white;
+}
+
+.btn-edit {
+    background-color: #2980b9;
+    color: white;
+}
+
+.btn-delete {
+    background-color: #c0392b;
+    color: white;
+}
+
+.btn-cancel {
+    background-color: #7f8c8d;
+    color: white;
+}
+
+.student-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.student-table th,
+.student-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.student-table th {
+    background-color: #2c3e50;
+    color: white;
+}
+
+.student-form .form-group {
+    margin-bottom: 15px;
+}
+
+.student-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.student-form input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #bdc3c7;
+    border-radius: 4px;
+}
