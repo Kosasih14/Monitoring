@@ -1,0 +1,41 @@
+{
+    "version": 2,
+    "functions": {
+        "api/index.php": {
+            "runtime": "vercel-php@0.8.0"
+        }
+    },
+    "routes": [
+        {
+            "src": "/build/(.*)",
+            "dest": "/public/build/$1"
+        },
+        {
+            "src": "/(.*)",
+            "dest": "/api/index.php"
+        }
+    ],
+    "installCommand": "composer install --no-dev --optimize-autoloader --no-interaction || echo 'Composer install failed, continuing...'",
+    "env": {
+        "APP_ENV": "production",
+        "APP_DEBUG": "false",
+        "APP_URL": "https://yourcelnganurl.com",
+        "APP_KEY": "base64:DJRFYzStlSZYf70a0v1BAPuW07uqs0JavyhWcTJTELE=",
+        "APP_CONFIG_CACHE": "/tmp/config.php",
+        "APP_EVENTS_CACHE": "/tmp/events.php",
+        "APP_PACKAGES_CACHE": "/tmp/packages.php",
+        "APP_ROUTES_CACHE": "/tmp/routes.php",
+        "APP_SERVICES_CACHE": "/tmp/services.php",
+        "VIEW_COMPILED_PATH": "/tmp",
+        "CACHE_DRIVER": "array",
+        "LOG_CHANNEL": "stderr",
+        "SESSION_DRIVER": "cookie",
+        "FIREBASE_PROJECT_ID": "celengan-7c473",
+        "FIREBASE_DATABASE_URL": "https://celengan-7c473-default-rtdb.firebaseio.com/",
+        "FIREBASE_API_KEY": "AIzaSyC4gqxOGLjcnZlWcHnp6BCa53MWY9kf5kU",
+        "FIREBASE_AUTH_DOMAIN": "celengan-7c473.firebaseapp.com",
+        "FIREBASE_STORAGE_BUCKET": "celengan-7c473.firebasestorage.app",
+        "FIREBASE_MESSAGING_SENDER_ID": "880232833106",
+        "FIREBASE_APP_ID": "1:880232833106:web:7080b4a845e62555c13f8b"
+    }
+}
